@@ -29,7 +29,7 @@ int main(void)
 	}
 	else
 	{
-	char msg[] = "is postive";
+	char msg[] = "is positive";
 
 	printf("%d %s\n", n, msg);
 	}
