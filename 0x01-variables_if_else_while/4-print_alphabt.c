@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (ch == 'e' || ch == 'p')
 		{
-		putchar('\0');
+		asm("nop");
 		}
 		else
 		{
