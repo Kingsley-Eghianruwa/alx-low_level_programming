@@ -34,7 +34,7 @@ void print_rev(char *s)
 {
 	int slen;
 
-	slen = _strlen(s);
+	slen = _strlen(s) - 1;
 	while (slen >=  0)
 	{
 		_putchar(*(s + slen));
