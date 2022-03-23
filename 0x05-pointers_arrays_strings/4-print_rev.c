@@ -35,11 +35,17 @@ void print_rev(char *s)
 	int slen;
 
 	slen = _strlen(s);
-	while (slen != 0)
+	while (slen >=  0)
 	{
 		_putchar(*(s + slen));
-		slen--;
+		if (slen == 0)
+		{
+			break;
+		}
+		else
+		{
+			slen--;
+		}
 	}
-	_putchar(*s);
 	_putchar('\n');
 }
