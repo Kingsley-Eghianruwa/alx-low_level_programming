@@ -1,3 +1,7 @@
+#include "main.h"
+
+
+
 /**
  * _puts_recursion - recursive puts a sting.
  * @s: string pointer
