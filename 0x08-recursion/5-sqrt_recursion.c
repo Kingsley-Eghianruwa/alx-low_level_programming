@@ -15,7 +15,7 @@ int root_finder(int a, int b)
 	{
 		return (a);
 	}
-	else if (a == 0)
+	else if (a <= 0)
 	{
 		return (-1);
 	}
@@ -35,6 +35,17 @@ int root_finder(int a, int b)
 
 int _sqrt_recursion(int n)
 {
-	return (root_finder((n / 2), n));
+	if (n == 1)
+	{
+		return (1);
+	}
+	else if (n < 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (root_finder((n / 2), n));
+	}
 }
 
