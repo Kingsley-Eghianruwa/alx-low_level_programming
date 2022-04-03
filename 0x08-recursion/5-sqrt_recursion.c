@@ -11,18 +11,16 @@
 
 int root_finder(int a, int b)
 {
-	if ((a * a) == b)
+	if ((a * a) != b && a != -1)
 	{
-		return (a);
-	}
-	else if (a <= 0)
-	{
-		return (-1);
+		a = a - 1;
+		return (root_finder(a, b));
 	}
 	else
 	{
-		return (root_finder((a - 1), b));
+		return (a);
 	}
+
 }
 
 /**
