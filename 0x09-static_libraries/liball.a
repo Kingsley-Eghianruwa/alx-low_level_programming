@@ -1,0 +1,280 @@
+!<arch>
+//                                              88        `
+c_functions_file_1.c/
+c_functions_file_2.c/
+c_functions_file_3.c/
+c_functions_file_4.c/
+/0              0           0     0     644     704       `
+#include "main.h"
+
+/**
+ * _islower - dummy function
+ * @c: dont know
+ *
+ * Description: null
+ * Return: integer
+ */
+
+int _islower(int c)
+{
+	return (c);
+}
+
+/**
+ * _isalpha - dummy function
+ * @c: integer input
+ *
+ * Description: null
+ * Return: integer
+ */
+
+int _isalpha(int c)
+{
+	return (c);
+}
+
+/**
+ * _abs - dummy function
+ * @n: integer input
+ *
+ * Descrption: null
+ * Return: integer
+ */
+
+int _abs(int n)
+{
+	return (n);
+}
+
+/**
+ * _isupper - dummy function
+ * @c: integer input
+ *
+ * Description: null
+ * Return: integer
+ */
+
+int _isupper(int c)
+{
+	return (c);
+}
+
+/**
+ * _isdigit -dummy function
+ * @c: integer input
+ *
+ * Description: null
+ * Return: integer
+ */
+
+int _isdigit(int c)
+{
+	return (c);
+}
+/22             0           0     0     644     738       `
+#include "main.h"
+
+/**
+ * _strlen - dummy function
+ * @s: string input
+ *
+ * Description: null
+ * Return: integer
+ */
+int _strlen(char *s)
+{
+	return (0);
+}
+
+/**
+ * _puts - dummy function
+ * @s: string
+ *
+ * Description: null
+ * Return: void
+ */
+void _puts(char *s)
+{
+	;
+}
+
+/**
+ * _strcpy - dummy function
+ * @dest: string
+ * @src: string
+ *
+ * Description: null
+ * Return: string
+ */
+char *_strcpy(char *dest, char *src)
+{
+	return (dest);
+}
+
+/**
+ * _atoi - dummy function
+ * @s: string
+ *
+ * Description: null
+ * Return: integer
+ */
+int _atoi(char *s)
+{
+	return (0);
+}
+
+/**
+ * _strcat - dummy function
+ * @dest: string
+ * @src: string
+ *
+ * Description: null
+ * Return: string
+ */
+char *_strcat(char *dest, char *src)
+{
+	return (dest);
+}
+/44             0           0     0     644     953       `
+#include "main.h"
+
+
+/**
+ * _strncat - dummy function
+ * @dest: string
+ * @src: string
+ *@n: integer
+ *
+ * Description: null
+ * Return: string
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	return (dest);
+}
+
+/**
+ * _strncpy - dummy function
+ * @dest: string
+ * @src: string
+ * @n: integer
+ *
+ * Description: null
+ * Return: string
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	return (dest);
+}
+
+/**
+ * _strcmp - dummy function
+ * @s1: string
+ * @s2: string
+ *
+ * Description: null
+ * Return: integer
+ */
+int _strcmp(char *s1, char *s2)
+{
+	return (0);
+}
+
+
+/**
+ * _memset - dummy function
+ * @s: string
+ * @b: character
+ * @n: integer
+ *
+ * Description: null
+ * Return: string
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	return (s);
+}
+
+/**
+ * _memcpy - dummy function
+ * @dest: string
+ * @src: string
+ * @n: integer
+ *
+ * Description: null
+ * Return: string
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	return (dest);
+}
+
+/66             0           0     0     644     696       `
+#include "main.h"
+
+/**
+ * _strchr - dummy function
+ * @s: string
+ * @c: char
+ *
+ * Description: Null
+ * Return: string
+ */
+char *_strchr(char *s, char c)
+{
+	return (s);
+}
+
+/**
+ * _strspn - dummy function
+ * @s: string
+ * @accept: string
+ *
+ * Description: null
+ * Return: int
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	return (0);
+}
+
+/**
+ * _strpbrk - dummy function
+ * @s: string
+ * @accept: string
+ *
+ * Description: null
+ * Return: string
+ */
+char *_strpbrk(char *s, char *accept)
+{
+	return (s);
+}
+
+/**
+ * _strstr - dummy function
+ * @haystack: string
+ * @needle: string
+ *
+ * Description: null
+ * Return: string
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	return (haystack);
+}
+_putchar.c/     0           0     0     644     247       `
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+

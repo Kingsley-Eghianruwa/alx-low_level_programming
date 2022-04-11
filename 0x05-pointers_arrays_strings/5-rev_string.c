@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strlen - finds the length of a string
@@ -23,21 +24,24 @@ int _strlen(char *s)
 }
 
 /**
- * print_rev - prints a string in reverse
+ * rev_str - outputs a string in reverse of input string
  * @s: string pointer
  *
  * Description: null
- * Return: void
+ * Return: char*
  */
 
-void print_rev(char *s)
+char *rev_str(char *s)
 {
 	int slen;
+	int i = 0;
+	char *tmp;
 
 	slen = _strlen(s) - 1;
 	while (slen >=  0)
 	{
-		_putchar(*(s + slen));
+		*(tmp + i) = *(s + slen);	
+		i++;
 		if (slen == 0)
 		{
 			break;
@@ -47,13 +51,13 @@ void print_rev(char *s)
 			slen--;
 		}
 	}
-	_putchar('\n');
+	tmp_ptr = tmp;
+	return (tmp_ptr);
 }
-
 
 /**
  * rev_string - reverses a string
- * @s: string
+ * @s: string pointer
  *
  * Description: null
  * Return: null
@@ -61,5 +65,6 @@ void print_rev(char *s)
 
 void rev_string(char *s)
 {
-	print_rev(s);
+	s = rev_str(s);
 }
+
