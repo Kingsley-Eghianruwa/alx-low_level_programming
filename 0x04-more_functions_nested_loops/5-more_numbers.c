@@ -23,8 +23,8 @@ void printLineFunc(void)
 	{
 		if (i >= 10 && i <= 14)
 		{
-			callputchar('1');
-			callputchar((i % 10) + '0');
+		/*	callputchar('1'); */
+		/*	callputchar((i % 10) + '0'); */
 		}
 		else
 		{
