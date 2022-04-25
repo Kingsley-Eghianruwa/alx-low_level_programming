@@ -20,7 +20,7 @@ void print_line(int n)
 	{
 		while (i <= n)
 		{
-			_putchar('-');
+			_putchar('_');
 			i = i + 1;
 		}
 		_putchar('\n');
