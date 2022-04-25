@@ -17,19 +17,19 @@ void callputchar(char c)
 void printLineFunc(void)
 {
 	int i;
+	int n;
 
 	i = 0;
 	while (i <= 14)
 	{
-		if (i >= 10 && i <= 14)
+		n = i;
+
+		if (n >= 10 && n <= 14)
 		{
 			callputchar('1');
-			callputchar((i % 10) + '0');
+			n = (n % 10);
 		}
-		else
-		{
-			callputchar(i + '0');
-		}
+		callputchar(n + '0');
 		i = i + 1;
 	}
 	callputchar('\n');
