@@ -1,15 +1,6 @@
 #include "main.h"
 
 /**
- * callputchar - calls the _putchar() function
- * @c: input char
- * Return: null
- */
-void callputchar(char c)
-{
-	_putchar(c);
-}
-/**
  * printLineFunc - print numbers 1 - 14 on a line
  * Return: null
  */
@@ -26,13 +17,13 @@ void printLineFunc(void)
 
 		if (n >= 10 && n <= 14)
 		{
-			callputchar('1');
+			_putchar('1');
 			n = (n % 10);
 		}
-		callputchar(n + '0');
+		_putchar(n + '0');
 		i = i + 1;
 	}
-	callputchar('\n');
+	_putchar('\n');
 }
 
 /**
