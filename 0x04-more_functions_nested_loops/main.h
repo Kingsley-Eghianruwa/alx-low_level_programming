@@ -12,5 +12,7 @@ void more_numbers(void);
 void print_line(int n);
 void print_diagonal(int n);
 void print_space(int n);
+void out_line(int);
+void print_square(int);
 
 #endif
