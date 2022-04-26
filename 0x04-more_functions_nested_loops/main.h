@@ -14,6 +14,6 @@ void print_diagonal(int n);
 void print_space(int n);
 void out_line(int);
 void print_square(int);
-void print_100(void);
+void fizz_buzz(void);
 
 #endif

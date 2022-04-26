@@ -6,7 +6,7 @@
  * Return: vooid
  */
 
-void print_100(void)
+void fizz_buzz(void)
 {
 	int i;
 	char *buzz = "Buzz";
