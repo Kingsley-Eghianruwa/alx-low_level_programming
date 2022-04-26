@@ -15,5 +15,7 @@ void print_space(int n);
 void out_line(int);
 void print_square(int);
 void fizz_buzz(void);
+void print_triangle(int);
+void out_liner(int, int);
 
 #endif
