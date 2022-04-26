@@ -17,5 +17,8 @@ void print_square(int);
 void fizz_buzz(void);
 void print_triangle(int);
 void out_liner(int, int);
+int _isfactor(long, long, long);
+int _isprime(long);
+long largest_prime(long);
 
 #endif
