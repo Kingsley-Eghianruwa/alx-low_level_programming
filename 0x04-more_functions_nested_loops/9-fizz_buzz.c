@@ -19,23 +19,31 @@ void fizz_buzz(void)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%s ", fizz_buzz);
+			printf("%s", fizz_buzz);
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s ", buzz);
+			printf("%s", buzz);
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s ", fizz);
+			printf("%s", fizz);
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+		}
+
+		if (i == 100)
+		{
+			;
+		}
+		else
+		{
+			printf(" ");
 		}
 		i = i + 1;
 	}
-	printf("\b");
 	printf("\n");
 }
 
