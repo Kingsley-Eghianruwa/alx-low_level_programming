@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * print_100 - print 1 -100 and replaces multiples of 3 and 5
- * Return: vooid
+ * fizz_buzz - print 1 to 100 and replaces multiples of 3 and 5
+ * Description: null
+ * Return: void
  */
 
 void fizz_buzz(void)
