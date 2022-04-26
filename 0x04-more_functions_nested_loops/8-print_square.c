@@ -30,9 +30,16 @@ void print_square(int n)
 	int i;
 
 	i = 1;
-	while (i <= n)
+	if (n <= 0)
 	{
-		out_line(n);
-		i = i + 1;
+		_putchar('\n');
+	}
+	else
+	{
+		while (i <= n)
+		{
+			out_line(n);
+			i = i + 1;
+		}
 	}
 }
