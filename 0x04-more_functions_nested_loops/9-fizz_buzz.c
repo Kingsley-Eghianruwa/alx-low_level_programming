@@ -37,3 +37,15 @@ void fizz_buzz(void)
 	}
 	printf("\n");
 }
+
+/**
+ * main - main function
+ * Description: null
+ * Return: 0
+ */
+
+int main(void)
+{
+	fizz_buzz();
+	return (0);
+}
