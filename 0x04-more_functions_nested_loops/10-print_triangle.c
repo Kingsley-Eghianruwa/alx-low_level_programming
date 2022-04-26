@@ -2,6 +2,7 @@
 /**
  * out_liner - prints a pattern on a line
  * @n: integer
+ * @i: integer
  * Return: void
  */
 
@@ -35,18 +36,16 @@ void print_triangle(int n)
 	i = 1;
 
 	if (n <= 0)
-	{	
+	{
 		_putchar('\n');
 	}
 	else
 	{
 		while (i <= n)
 		{
-			out_liner(n,i);
+			out_liner(n, i);
 			_putchar('\n');
 			i = i + 1;
 		}
 	}
 }
-
-			
