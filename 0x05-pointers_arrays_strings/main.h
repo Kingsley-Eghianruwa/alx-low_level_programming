@@ -11,5 +11,6 @@ void rev_string(char *s);
 void rev_str(char *s);
 void puts_half(char *);
 void puts2(char *);
+void print_array( int *, int);
 
 #endif
