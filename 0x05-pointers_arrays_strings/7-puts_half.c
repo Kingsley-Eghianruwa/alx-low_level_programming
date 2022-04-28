@@ -24,7 +24,7 @@ int _strlen(char *s)
 
 /**
  * puts_half - outputs tail half of a string
- * str: inputstring
+ * @str: inputstring
  * Return: void
  */
 
@@ -48,7 +48,7 @@ void puts_half(char *str)
 	}
 
 	loop_index = string_length - string_print_length;
-	
+
 	while (loop_index <= string_index)
 	{
 		_putchar(str[loop_index]);
@@ -56,6 +56,3 @@ void puts_half(char *str)
 	}
 	_putchar('\n');
 }
-
-
-		
