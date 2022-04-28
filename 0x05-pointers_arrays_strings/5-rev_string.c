@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+
 
 /**
  * _strlen - finds the length of a string
@@ -31,28 +31,21 @@ int _strlen(char *s)
  * Return: char*
  */
 
-char *rev_str(char *s)
+void rev_str(char *s)
 {
 	int slen;
 	int i = 0;
-	char *tmp;
+	char tmp = 0;
 
 	slen = _strlen(s) - 1;
-	while (slen >=  0)
+	while (i <= (slen / 2))
 	{
-		*(tmp + i) = *(s + slen);	
-		i++;
-		if (slen == 0)
-		{
-			break;
-		}
-		else
-		{
-			slen--;
-		}
+		tmp = s[i];
+		s[i] = s[slen - i];
+		s[slen - i] = tmp;
+		i = i + 1;
 	}
-	tmp_ptr = tmp;
-	return (tmp_ptr);
+
 }
 
 /**
@@ -65,6 +58,6 @@ char *rev_str(char *s)
 
 void rev_string(char *s)
 {
-	s = rev_str(s);
+	rev_str(s);
 }
 
