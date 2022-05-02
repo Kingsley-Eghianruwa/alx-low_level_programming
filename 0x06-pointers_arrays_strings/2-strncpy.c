@@ -39,7 +39,7 @@ char *_strncpy(char *dest, char *src, int n)
 	src_string_length = _strlen(src);
 	loop_index = 0;
 
-	while (loop_index <= n)
+	while (loop_index <= (n - 1))
 	{
 		if (loop_index > src_string_length)
 		{
