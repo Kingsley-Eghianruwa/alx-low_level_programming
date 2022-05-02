@@ -43,7 +43,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		if (loop_index > src_string_length)
 		{
-			dest[loop_index] = '0';
+			dest[loop_index] = '\0';
 			loop_index = loop_index + 1;
 		}
 		else
