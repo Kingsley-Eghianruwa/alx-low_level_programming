@@ -78,6 +78,10 @@ char *cap_string(char *s)
 
 	s_string_lehgth = _strlen(s) - 1;
 	loop_index = 0;
+	if (s[0] >= 'a' && s[0] <= 'z')
+	{
+		s[0] = s[0] - 32;
+	}
 	while (loop_index <= s_string_lehgth && s[loop_index] != '\0')
 	{
 		flag_this_char = isseparator(s[loop_index]);
