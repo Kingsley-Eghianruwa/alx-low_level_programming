@@ -11,5 +11,7 @@ void reverse_array(int *, int);
 char *string_toupper(char *);
 char *cap_string(char *);
 int isseparator(char);
+char *leet(char *);
+char leeter(char);
 
 #endif
