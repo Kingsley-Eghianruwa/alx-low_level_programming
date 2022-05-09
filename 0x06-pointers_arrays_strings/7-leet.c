@@ -22,10 +22,8 @@ char leeter(char x)
 			leet_out = leet_out_array[loop_index];
 			break;
 		}
-		else
-		{
-			loop_index = loop_index + 1;
-		}
+
+		loop_index = loop_index + 1;
 	}
 	return (leet_out);
 }
