@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 	int array_length;
 
 	array_length = _strlen(s);
-	while (index <= array_length - 1)
+	while (index <= array_length)
 	{
 		if (s[index] == c)
 		{
