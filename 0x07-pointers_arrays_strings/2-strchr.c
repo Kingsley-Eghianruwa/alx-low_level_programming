@@ -11,8 +11,10 @@ char *_strchr(char *s, char c)
 {
 	int index = 0;
 	char *cptr = NULL;
+	int array_length;
 
-	while (s[index] != '\0')
+	array_length = _strlen(s);
+	while (index <= array_length - 1)
 	{
 		if (s[index] == c)
 		{
@@ -26,3 +28,26 @@ char *_strchr(char *s, char c)
 	}
 	return (cptr);
 }
+
+/**
+ * _strlen - finds the length of a string
+ * @s: string pointer
+ *
+ * Description: null
+ * Return: interger
+ */
+
+int _strlen(char *s)
+{
+	int count;
+
+	count = 0;
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+
+	return (count);
+}
+
