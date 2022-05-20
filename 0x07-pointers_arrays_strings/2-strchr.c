@@ -9,11 +9,13 @@
 char *_strchr(char *s, char c)
 {
 	int index = 0;
+	char *cptr = NULL;
 
 	while (s[index] != '\0')
 	{
 		if (s[index] == c)
 		{
+			cptr = &s[index];
 			break;
 		}
 		else
@@ -21,5 +23,5 @@ char *_strchr(char *s, char c)
 			index = index + 1;
 		}
 	}
-	return (&s[index]);
+	return (cptr);
 }
