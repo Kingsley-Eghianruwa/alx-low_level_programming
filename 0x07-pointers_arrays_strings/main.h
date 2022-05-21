@@ -11,5 +11,8 @@ int find_in_str(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 int find_in_string(char *, char);
+int cmp_element(char *, char *);
+int cmp_window(int, int, char *, char *);
+char *_strstr(char *, char *);
 
 #endif
