@@ -12,5 +12,6 @@ int _string2int(char *);
 void _putint(int);
 void _putstring(char *);
 int getdigits(int);
+int char_checker(char *);
 
 #endif
