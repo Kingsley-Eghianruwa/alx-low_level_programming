@@ -4,7 +4,7 @@
  * create_array - creates an array and fills it with a character
  * @size: size of the array
  * @c: charcter to fill the array with
- * Return: pointer to the array
+ * Return: pointer to the array or NULL if size = 0 or malloc fails
  */
 
 char *create_array(unsigned int size, char c)
@@ -12,7 +12,17 @@ char *create_array(unsigned int size, char c)
 	char *char_array;
 	unsigned int index = 0;
 
+	if (size == 0)
+	{
+		return (NULL);
+	}
+
 	char_array = malloc(size * sizeof(char));
+
+	if (char_array == NULL)
+	{
+		return (NULL);
+	}
 
 	while (index < size)
 	{
