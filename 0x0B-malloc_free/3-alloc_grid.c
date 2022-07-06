@@ -18,14 +18,16 @@ int **alloc_grid(int width, int height)/*---*/
 
 		if (arr == NULL)
 		{
+			free(arr);
 			return (NULL);
 		}
 
-		while (index < width) /*---*/
+		while (index < height) /*---*/
 		{
 			arr[index] = malloc(width * sizeof(int));
 			if (arr[index] == NULL)
 			{
+				free(arr);
 				return (NULL);
 			}
 			arr[index] = int_memset(arr[index], 0, width);
