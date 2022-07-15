@@ -8,13 +8,14 @@
  */
 int **alloc_grid(int width, int height)/*---*/
 {
-	int index = 0;
+	
 
 	if (height > 0 && width > 0)/*---*/
 	{
 		int **arr;
+		int index = 0;
 
-		arr = malloc(sizeof(int *) * height);
+		arr = malloc(sizeof(int*) * height);
 
 		if (arr == NULL)
 		{
@@ -25,13 +26,21 @@ int **alloc_grid(int width, int height)/*---*/
 		while (index < height) /*---*/
 		{
 			arr[index] = malloc(width * sizeof(int));
-			if (arr[index] == NULL)
+			if (arr[index] == NULL) /*---*/
 			{
-				free(arr[index]);
-				free(arr);
+				while (index >= 0)
+				{
+					int e_index = 0;
+					while (e_index < width)
+					{
+						free(&arr[index][e_index]);
+						e_index = e_index + 1;
+					}
+					index = index - 1;
+				}
 				return (NULL);
-			}
-			arr[index] = int_memset(arr[index], 0, width);
+			} /*...*/
+			int_memset(arr[index], 0, width);
 			index = index + 1;
 		} /*...*/
 		return (arr);
@@ -51,7 +60,7 @@ int **alloc_grid(int width, int height)/*---*/
  * Return: pointer to array
  */
 
-int *int_memset(int *s, int b, int n) /*---*/
+void int_memset(int *s, int b, int n) /*---*/
 {
 	int index = 0;
 
@@ -60,5 +69,4 @@ int *int_memset(int *s, int b, int n) /*---*/
 		s[index] = b;
 		index = index + 1;
 	}
-	return (s);
 } /*...*/
