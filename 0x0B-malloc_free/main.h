@@ -18,7 +18,7 @@ char *create_array(unsigned int, char);
 char *_strdup(char *str);
 char *str_concat(char *, char *);
 int **alloc_grid(int width, int height);
-int *int_memset(int *s, int b, int n);
+void int_memset(int *s, int b, int n);
 
 
 #endif
