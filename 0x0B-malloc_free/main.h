@@ -19,6 +19,6 @@ char *_strdup(char *str);
 char *str_concat(char *, char *);
 int **alloc_grid(int width, int height);
 void int_memset(int *s, int b, int n);
-
+void freemem(int **, int); 
 
 #endif

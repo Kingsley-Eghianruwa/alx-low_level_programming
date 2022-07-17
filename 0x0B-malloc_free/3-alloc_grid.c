@@ -8,47 +8,33 @@
  */
 int **alloc_grid(int width, int height)/*---*/
 {
-
 	if (height > 0 && width > 0)/*---*/
 	{
-		int **arr;
+		int **buffer = NULL;
 		int index = 0;
 
-		arr = malloc(sizeof(int *) * height);
-
-		if (arr == NULL)
+		buffer = malloc(sizeof(int *) * height);
+		if (buffer == NULL)
 		{
-			free(arr);
 			return (NULL);
 		}
-
-		while (index < height) /*---*/
+		while (index < height)
 		{
-			arr[index] = malloc(width * sizeof(int));
-			if (arr[index] == NULL) /*---*/
+			buffer[index] = malloc(width * sizeof(int));
+			if (buffer[index] == NULL)
 			{
-				while (index >= 0)
-				{
-					int e_index = 0;
-
-					while (e_index < width)
-					{
-						free(&arr[index][e_index]);
-						e_index = e_index + 1;
-					}
-					index = index - 1;
-				}
+				freemem(buffer, index);
 				return (NULL);
-			} /*...*/
-			int_memset(arr[index], 0, width);
+			}
+			int_memset(buffer[index], 0, width);
 			index = index + 1;
-		} /*...*/
-		return (arr);
-	}
+		}
+		return (buffer);
+	} /*...*/
 	else
 	{
 		return (NULL);
-	} /*...*/
+	}
 } /*...*/
 
 
@@ -64,9 +50,27 @@ void int_memset(int *s, int b, int n) /*---*/
 {
 	int index = 0;
 
-	while (index <= (n - 1))
+	while (index < n)
 	{
 		s[index] = b;
 		index = index + 1;
 	}
 } /*...*/
+
+/**
+ * freemem - frees memory allocated by malloc
+ * @B: input buffer
+ * @n: index at which malloc failed
+ * Return: void
+ */
+void freemem(int **B, int n)
+{
+	int index = n;
+
+	while (index >= 0)
+	{
+		free(B[index]);
+		index = index - 1;
+	}
+	free(B);
+}
