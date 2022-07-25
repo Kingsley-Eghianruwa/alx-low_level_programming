@@ -21,11 +21,11 @@ char *argstostr(int ac, char **av)
 
 	while (index < ac)
 	{
-		bytes = bytes + sizeof(av[index]);
+		bytes = bytes + _strlen(av[index]);
 		index = index + 1;
 	}
 
-	bytes = bytes + sizeof('\0');
+	bytes = bytes + ac + 1;
 	s = malloc(bytes * sizeof(char));
 
 	if (s == NULL)
