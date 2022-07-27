@@ -23,5 +23,6 @@ void freemem(int **, int);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 int fill_str(char *, char *, int);
+char **strtow(char *);
 
 #endif
