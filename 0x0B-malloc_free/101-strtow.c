@@ -31,6 +31,10 @@ char **strtow(char *str)
 	index2 = 0;
 	while (str[index] != '\0')
 	{
+		if (str[index + 1] == '\0')
+		{
+			break;
+		}
 		if ((int)str[index] == 32 && (int)str[index + 1] != 32)
 		{
 			int idx = index + 1;
