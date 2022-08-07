@@ -14,4 +14,5 @@ void _putstring(char *);
 int getdigits(int);
 
 void *malloc_checked(unsigned int);
+char *string_nconcat(char *, char *, unsigned int);
 #endif
