@@ -41,11 +41,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if ((int)n >= _strlen(s2))
 	{
 		n = _strlen(s2);
-		mem = sizeof(s1) + sizeof(s2) - 1;
+		mem = (_strlen(s1) + _strlen(s2)) + 1;
 	}
 	else
 	{
-		mem = sizeof(s1) + (n * sizeof(char));
+		mem = (_strlen(s1) + n + 1) * sizeof(char);
 	}
 	str = malloc(mem);
 	if (str == NULL)
