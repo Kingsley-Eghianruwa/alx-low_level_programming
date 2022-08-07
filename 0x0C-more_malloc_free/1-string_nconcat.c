@@ -40,6 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	n_s1 = _strlen(s1) - 1;
 	if ((int)n >= _strlen(s2))
 	{
+		n = _strlen(s2);
 		mem = sizeof(s1) + sizeof(s2) - 1;
 	}
 	else
