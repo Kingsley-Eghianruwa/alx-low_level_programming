@@ -63,6 +63,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str[n_s1 + 1 + idx] = s2[idx];
 		idx = idx + 1;
 	}
+	str[n_s1 + 1 + idx] = '\0';
 	if (null_flag_s1 == 1)
 	{
 		free(s1);
