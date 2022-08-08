@@ -42,7 +42,7 @@ void *c_memset(void *p, char c, unsigned int size)
 	char *idx = NULL;
 
 	idx = (char *)p;
-	while(idx <= (char *)p + size)
+	while (idx <= (char *)p + size)
 	{
 		*idx = c;
 		idx = idx + 1;
