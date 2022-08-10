@@ -26,7 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 	array = c_memset(array, '\0', mem);
-	return (array);
+	return ((void *)array);
 }
 
 /**
@@ -42,7 +42,7 @@ void *c_memset(void *p, char c, unsigned int size)
 	char *idx = NULL;
 
 	idx = (char *)p;
-	while (idx <= (char *)p + size)
+	while (idx <= ((char *)p + size - 1))
 	{
 		*idx = c;
 		idx = idx + 1;
